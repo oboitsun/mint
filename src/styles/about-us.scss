@@ -1,0 +1,29 @@
+#about-us {
+  padding: 100px 0;
+  .kiwis-squad {
+    order: 1;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading,
+  .subheading {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .kiwis-squad {
+      width: 50%;
+    }
+    .about {
+      order: 1;
+      align-items: flex-start;
+    }
+    .heading,
+    .subheading {
+      text-align: left;
+    }
+  }
+}

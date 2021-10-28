@@ -1,0 +1,148 @@
+@import "./variables.scss";
+#hero-section {
+  // max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  height: 888px;
+  display: flex;
+  position: relative;
+
+  // background: linear-gradient(180deg, #623002 0%, #fd8517 71.87%);
+
+  .welcome-to {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title:first-child {
+    color: #fff;
+  }
+  .title {
+    line-height: 1;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  .title-big {
+    color: $orange;
+    font-size: 45px;
+  }
+  .timer {
+    // padding: 13px 19px;
+    width: 314px;
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    place-content: center;
+  }
+
+  .timer-digits {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 64px;
+    text-align: center;
+  }
+  .timer-date {
+    font-size: 8px;
+    font-weight: 400;
+    color: white;
+    @media (min-width: 1024px) {
+      font-size: 10px;
+    }
+  }
+  .splash {
+    display: flex;
+    flex-direction: column;
+  }
+  .kiwis {
+    width: 100%;
+    max-width: 450px;
+  }
+  .kiwi1,
+  .kiwi2 {
+    transform: translateX(-50%);
+  }
+  .kiwi1 {
+    left: 50%;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+  }
+  .kiwi2 {
+    position: absolute;
+    max-width: 200px;
+    z-index: 2;
+    bottom: 10%;
+    width: 49%;
+    right: 10%;
+    transform: translateX(50%) scaleX(-1);
+  }
+
+  @media (min-width: 1024px) {
+    align-items: center;
+    height: 606px;
+    max-height: 606px;
+    align-items: flex-end;
+    .splash {
+      flex-direction: row;
+    }
+    .kiwis {
+      width: 50%;
+    }
+
+    .welcome-to {
+      align-items: flex-start;
+      width: 50%;
+    }
+
+    .title {
+      font-size: 34px;
+    }
+    .title-big {
+      font-size: 56px;
+    }
+    .connect-wallet {
+      width: 100%;
+    }
+    .kiwi1,
+    .kiwi2 {
+      max-width: unset;
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      left: 0;
+    }
+    .kiwi1 {
+      z-index: 3;
+      top: calc(50% + 140px);
+      left: 2%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    .kiwi2 {
+      z-index: 2;
+      top: calc(44% + 140px);
+      left: 93%;
+      transform: translateX(-50%) scaleX(-1);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    height: 847px;
+    max-height: 847px;
+    .welcome-to {
+      max-width: 579px;
+      padding-bottom: 140px;
+    }
+    .title {
+      font-size: 80px;
+    }
+    .title-big {
+      font-size: 80px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "./variables.scss";
+.popup {
+  background: $ocean;
+  padding: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .popup-mint-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .popup-mint-item {
+    width: 100%;
+    height: 64px;
+    align-items: center;
+    padding: 0 30px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .popup-mint-button {
+    color: black;
+    background: $orange;
+    border: none;
+    justify-content: center;
+  }
+  .popup-close {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    line-height: 1;
+    background: $orange;
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1280px) {
+  }
+}

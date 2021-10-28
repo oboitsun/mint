@@ -1,0 +1,94 @@
+@import "./variables.scss";
+
+#team {
+  padding: 100px 0;
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .card-wrapper {
+    color: white;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background: #000;
+  }
+  .card-1 {
+    background: #ece5ca;
+  }
+  .card-2 {
+    background: #2c75ce;
+  }
+  .card-3 {
+    background: #f2d760;
+  }
+  .card-4 {
+    background: plum;
+  }
+  .card-img {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .card-name {
+    padding-top: 5px;
+
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .card-position {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .swpr-button {
+    color: white;
+    width: 10px;
+    height: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+  }
+  .swiper-button-prev {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .swiper-button-next {
+    transform: translateX(50%) translateY(-50%);
+  }
+  .swpr-prev {
+    left: 0px;
+  }
+  .swpr-next {
+    right: 0px;
+  }
+  @media (min-width: 1024px) {
+    .swpr-button {
+      top: 40%;
+      width: 40px;
+      height: 40px;
+    }
+    .swpr-prev {
+      left: 10px;
+    }
+    .swpr-next {
+      right: 0px;
+    }
+    .team-container {
+      width: 100%;
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: 1fr 1.5fr;
+    }
+  }
+  @media (min-width: 1280px) {
+  }
+}

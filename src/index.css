@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "Guerrilla";
+  src: local("Guerrilla"), url(./font/Guerrilla.ttf) format("truetype");
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background: #036a73;
+}
+
+.font-guera {
+  font-family: "Guerrilla", sans-serif;
+}
+
+.my-container {
+  width: 100%;
+  padding: 0 40px;
+  max-width: 864px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .my-container {
+    padding: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .my-container {
+    max-width: 1080px;
+  }
+}
+
+.faq-divider {
+  background: rgba(255, 255, 255, 0.2);
+  @apply h-px  w-full  opacity-50 flex-shrink-0;
+}
+
+/*Connect Wallet Section */

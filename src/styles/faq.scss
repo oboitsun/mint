@@ -1,0 +1,54 @@
+@import "./variables.scss";
+#faq {
+  // background: linear-gradient(180deg, #d66703 0%, #d66703 100%);
+  .kiwi {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 400px;
+    order: 1;
+    z-index: 2;
+    position: relative;
+  }
+  .cloud {
+    @apply absolute w-2/3 text-orange;
+    top: 75%;
+    left: 15%;
+  }
+  .my-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-list {
+  }
+  .subheading {
+    padding-bottom: 40px;
+  }
+  .faq-question {
+    max-width: 90%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: $orange;
+  }
+  .arrow-down {
+    padding-left: 4px;
+
+    transition: all 0.4s;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    .my-container {
+    }
+    .heading {
+    }
+    .subheading {
+      padding-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,60 @@
+@import "./variables.scss";
+#roadmap {
+  // background: linear-gradient(180deg, #b65700 0%, #d66703 100%);
+  padding: 60px 0;
+  .milestone-point {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-auto-rows: auto;
+    column-gap: 20px;
+  }
+  .milestone {
+    width: 100%;
+    height: 100%;
+    background: $turqs;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .milestone-month {
+    height: max-content;
+    font-size: 24px;
+    font-family: "Guerrilla";
+    color: $mustard;
+    justify-content: center;
+    line-height: 1;
+  }
+  .milestone-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .month-heading {
+    color: $mustard;
+    font-weight: 700;
+  }
+  .month-text {
+    color: white;
+    font-weight: 500;
+  }
+  @media (min-width: 1024px) {
+    .milestone-month {
+      font-size: 40px;
+      height: 100%;
+    }
+    .milestone-content {
+      flex-direction: row;
+      column-gap: 8px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding: 90px 0;
+    .milestone-point {
+      grid-template-columns: 0.2fr 1fr;
+      column-gap: 40px;
+    }
+    .milestone-month {
+      font-size: 48px;
+    }
+  }
+}
